@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  rails:
+    build: .
+    image: jacksonpires/ubuntu-rails-ssh
+    volumes:
+      - .:/projects
+    ports:
+      - "3000"
+      - "22"
